@@ -1,0 +1,107 @@
+/* Estilos para los textareas */
+.first-textarea {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background: none;
+    resize: none;
+}
+
+.area-result {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+    resize: none;
+    box-shadow: 0px 0px 10px #888888;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-result img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.text-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.text-container p {
+    margin: 0;
+    padding: 5px;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: white;
+    border-color: #0A2E6E;
+    margin-top: 10px;
+}
+
+/* Estilos para los botones */
+.btn-primary {
+    background-color: #0A3871;
+    border-color: #0A3871;
+    width: 100%;
+}
+
+.btn-secondary {
+    background-color: #D8DFE8;
+    border-color: #D8DFE8;
+    width: 100%;
+    color: #0A2E6E;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    color: white;
+    background-color: #08335b;
+    border-color: #08335b;
+}
+
+/* Estilos para el contenedor */
+.container {
+    max-width: 900px;
+}
+
+/* Estilos para el fondo */
+body {
+    background-color: #E5E5E5;
+    font-family: 'Code', monospace;
+}
+
+/* Estilos para el placeholder del primer textarea */
+.first-textarea::-webkit-input-placeholder {
+    color: #0A2E6E;
+}
+
+.first-textarea:-moz-placeholder {
+    color: #0A2E6E;
+}
+
+.first-textarea::-moz-placeholder {
+    color: #0A2E6E;
+}
+
+.first-textarea:-ms-input-placeholder {
+    color: #0A2E6E;
+}
+
+img.left {
+    float: left;
+    margin-right: 10px;
+    /* margen a la derecha para separar la imagen del textarea */
+}
