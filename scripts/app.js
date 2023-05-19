@@ -31,6 +31,9 @@ const resultArea = document.querySelector(".area-result .text-container");
 // AÑADIR FUNCION AL BOTON ENCRIPTAR
 document.querySelector("#encrypt-btn").addEventListener("click", () => {
     const inputText = inputTextarea.value.toLowerCase();
+    if (inputText.trim() === "" || !/^[a-zA-Z\s]*$/.test(inputText)) {
+        return; // Si no hay texto ingresado o contiene caracteres especiales, no hacer nada
+    }
     const encryptedText = encryptText(inputText);
 
     resultTitle.innerHTML = "Texto encriptado:"
@@ -49,6 +52,9 @@ document.querySelector("#encrypt-btn").addEventListener("click", () => {
 // AÑADIR FUNCION AL BOTON DESCENCRIPTAR
 document.querySelector("#decrypt-btn").addEventListener("click", () => {
     const inputText = inputTextarea.value.toLowerCase();
+    if (inputText.trim() === "" || !/^[a-zA-Z\s]*$/.test(inputText)) {
+        return; // Si no hay texto ingresado o contiene caracteres especiales, no hacer nada
+    }
     const decryptedText = decryptText(inputText);
 
     resultTitle.innerHTML = "Texto encriptado:"
