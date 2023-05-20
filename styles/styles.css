@@ -41,17 +41,6 @@
     text-align: center;
 }
 
-.icon-container{
-    position:absolute;
-    margin-top: -25px;
-}
-
-.footer-container {
-    position: absolute;
-    margin-left: 100px;
-    margin-top: 10px;
-}
-
 .btn-primary,
 .btn-secondary {
     color: white;
@@ -136,4 +125,8 @@ img.left {
 .text {
     font-size: 12px;
     margin-bottom: 50px;
+}
+
+footer{
+    text-align: center;
 }
