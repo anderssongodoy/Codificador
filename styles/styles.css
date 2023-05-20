@@ -47,8 +47,8 @@
     border-color: #0A2E6E;
 }
 
-#copy-btn{
-    position:relative;
+#copy-btn {
+    position: relative;
 }
 
 /* Estilos para los botones */
@@ -65,11 +65,17 @@
     color: #0A2E6E;
 }
 
-.btn-primary:hover,
 .btn-secondary:hover {
     color: white;
     background-color: #08335b;
     border-color: #08335b;
+}
+
+.btn-primary:hover {
+    background-color: #D8DFE8;
+    border-color: #D8DFE8;
+    width: 100%;
+    color: #0A2E6E;
 }
 
 /* Estilos para el contenedor */
@@ -127,6 +133,6 @@ img.left {
     margin-bottom: 50px;
 }
 
-footer{
+footer {
     text-align: center;
 }
