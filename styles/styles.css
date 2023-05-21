@@ -148,5 +148,9 @@ img.left {
 footer {
     text-align: center;
     font-size: 12px;
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+footer a{
+    font-size: 20px;
 }
