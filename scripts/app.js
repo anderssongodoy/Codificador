@@ -62,9 +62,11 @@ document.querySelector("#decrypt-btn").addEventListener("click", () => {
     resultTitle.innerHTML = "Texto encriptado:"
     resultText.innerHTML = decryptedText
     resultImg.style.display = 'none';
+    textcontainer.style.bottom = "";
+    copyBtn.style.width = '80%';
 
-    // mostrar el resultado
-    resultArea.style.display = "block";
+    // mostrar el botón
+    copyBtn.style.display = 'block';
 });
 
 // AÑADIR FUNCION AL BOTON
