@@ -48,10 +48,10 @@ document.querySelector("#encrypt-btn").addEventListener("click", () => {
     textcontainer.style.bottom = "";
     copyBtn.style.width = '80%';
 
-    text.style.whiteSpace = 'nowrap';
-    text.style.width = '250px';
-    text.style.overflow = 'hidden';
-    text.style.textOverflow = 'ellipsis';
+    text.style.wordBreak = 'break-all';
+    text.style.minHeight = '300px'
+    text.style.textAlign = 'justify';
+
     // mostrar el botón
     copyBtn.style.display = 'block';
 });
@@ -70,10 +70,9 @@ document.querySelector("#decrypt-btn").addEventListener("click", () => {
     textcontainer.style.bottom = "";
     copyBtn.style.width = '80%';
 
-    text.style.whiteSpace = 'nowrap';
-    text.style.width = '250px';
-    text.style.overflow = 'hidden';
-    text.style.textOverflow = 'ellipsis';
+    text.style.wordBreak = 'break-all';
+    text.style.minHeight = '300px'
+    text.style.textAlign = 'justify';
     // mostrar el botón
     copyBtn.style.display = 'block';
 });
