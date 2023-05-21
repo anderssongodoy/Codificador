@@ -3,6 +3,7 @@ const textcontainer = document.getElementById('text-container1');
 const resultImg = document.querySelector(".area-result img");
 const resultTitle = document.getElementById("title");
 const resultText = document.getElementById("result-text");
+const text = document.querySelector(".area-result .text-container .text");
 // DEFINIR EL BOTON PARA COPIAR
 const copyBtn = document.getElementById('copy-btn');
 copyBtn.style.display = 'none';
@@ -47,6 +48,10 @@ document.querySelector("#encrypt-btn").addEventListener("click", () => {
     textcontainer.style.bottom = "";
     copyBtn.style.width = '80%';
 
+    text.style.whiteSpace = 'nowrap';
+    text.style.width = '250px';
+    text.style.overflow = 'hidden';
+    text.style.textOverflow = 'ellipsis';
     // mostrar el botón
     copyBtn.style.display = 'block';
 });
@@ -65,6 +70,10 @@ document.querySelector("#decrypt-btn").addEventListener("click", () => {
     textcontainer.style.bottom = "";
     copyBtn.style.width = '80%';
 
+    text.style.whiteSpace = 'nowrap';
+    text.style.width = '250px';
+    text.style.overflow = 'hidden';
+    text.style.textOverflow = 'ellipsis';
     // mostrar el botón
     copyBtn.style.display = 'block';
 });
